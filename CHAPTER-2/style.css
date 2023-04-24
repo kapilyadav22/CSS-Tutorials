@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background-color: rgba(158, 70, 206, 0.421);
+    height: 100px;
+    color: white;
+    
+    /* m0+p0 */
+}
+
+.green{
+    background-color: green;
+    color: aqua;
+}

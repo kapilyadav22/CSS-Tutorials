@@ -1,0 +1,14 @@
+.container{
+    width: 300px;
+    height: 1000px;
+    border: 2px;
+    background-image: url(https://thumbs.dreamstime.com/b/small-tree-growing-sunrise-green-world-earth-day-concept-162365691.jpg);
+    /* background-repeat: space; */ 
+    background-repeat: no-repeat;
+    background-size: 300px 1000px;
+    /* background-color: red; */
+    border: 5px solid red;
+    /* background-position: center left; */
+    background-attachment: local;
+    color: rgb(18, 0, 0);
+}
