@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .box1{
+            background-color: red;
+            margin: 20px;
+            height: 1000px;
+            width: 233px;
+            border: 2px solid black;
+            /* effective width of box containing border and padding */
+            
+        }
+        /* If margin of two boxes collides, then margin of greater box is considered and share
+        with another boxes */
+        .box2{
+            background-color: lightblue;
+            /* margin: 10px; */
+            height: 10px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid grey;
+            /* Border-box adjusted the size of the box including the padding and border,
+            it will increase or decrease the size of content box, depending on padding and border, but the size of box will remain constant including border and padding.
+            NOTE: margin will not be adjusted and will include additionally */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto recusandae quam obcaecati beatae impedit aperiam mollitia omnis ad modi necessitatibus ipsam, libero non deserunt, alias consequatur laborum odit debitis. Omnis atque ea cumque?
+        <div class="box2">
+        </div>
+    </div>
+    
+</body>
+</html>
