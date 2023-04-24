@@ -1,0 +1,15 @@
+h1{
+    color: red;
+}
+div{
+    background-color: antiquewhite;
+}
+#red{
+    background-color: red;
+}
+.blue, h3{
+    /* This is a comment in CSS */
+    color: blue;
+    background-color: lightgray;
+    ;
+}
